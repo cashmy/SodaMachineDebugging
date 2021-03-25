@@ -6,10 +6,10 @@ def simulation_main_menu():
     validate_user_selection = (False, None)
     while validate_user_selection[0] is False:
         print("\t\t-Simulation menu-")
-        print("\tPress -0- to begin transaction")
-        print("\tPress -1- to check wallet for coins")
-        print("\tPress -2- to check backpack for cans")
-        print("\tPress -3- to terminate simulation")
+        print("\tPress -1- to begin transaction")
+        print("\tPress -2- to check wallet for coins")
+        print("\tPress -3- to check backpack for cans")
+        print("\tPress -4- to terminate simulation")
         user_input = try_parse_int(input())
         validate_user_selection = validate_main_menu(user_input)
     return validate_user_selection[1]
@@ -18,10 +18,10 @@ def simulation_main_menu():
 def validate_main_menu(user_input):
     """Validation function that checks if 'user_input' argument is an int 1-4. No errors."""
     switcher = {
-        0: (True, 0),
         1: (True, 1),
         2: (True, 2),
         3: (True, 3),
+        4: (True, 4),
     }
     return switcher.get(user_input, (False, None))
 
@@ -148,7 +148,7 @@ def validate_coin_selection(selection):
         2: (True, "Dime"),
         3: (True, "Nickel"),
         4: (True, "Penny"),
-        5: (True, "Done")
+        5: (False, "Done")
     }
     return switcher.get(selection, (False, None))
 
