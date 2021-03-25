@@ -26,10 +26,10 @@ class Customer:
                 user_interface.output_text("You do not have any of those coins, try again")
         return customer_payment
 
-    def get_wallet_coin(self, coin_name):
+    def get_wallet_coin(self, name_of_coin):
         """Method responsible for retrieving a single coin from wallet's money list"""
         for coin in self.wallet.money:
-            if coin.name == coin.name:
+            if name_of_coin == coin.name:
                 self.wallet.money.remove(coin)
                 return coin
         return None
