@@ -127,7 +127,7 @@ class SodaMachine:
                 return can
         return None
 
-    def return_inventory(chosen_soda):
+    def return_inventory(self, chosen_soda):
         """Re-adds a remove can back to inventory upon unsuccessful purchase attempt"""
         self.inventory.append(chosen_soda)
 
