@@ -63,7 +63,7 @@ class SodaMachine:
         elif total_payment_value == selected_soda.price:
             self.deposit_coins_into_register(customer_payment)
             customer.add_can_to_backpack(selected_soda)
-            user_interface.end_message(selected_soda, 0)
+            user_interface.end_message(selected_soda.name, 0)
         else:
             user_interface.output_text("You do not have enough money to purchase this item, returning payment")
             customer.add_coins_to_wallet(customer_payment)
