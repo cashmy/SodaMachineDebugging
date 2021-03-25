@@ -48,7 +48,7 @@ def display_welcome():
 
 def output_text(text):
     """User input method that will print to console any string passed in as an argument"""
-    print("text")
+    print(text)
 
 
 def clear_console():
