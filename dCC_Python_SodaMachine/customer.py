@@ -1,3 +1,6 @@
+from dCC_Python_SodaMachine import user_interface
+from dCC_Python_SodaMachine.backpack import Backpack
+from dCC_Python_SodaMachine.wallet import Wallet
 
 
 class Customer:
@@ -33,11 +36,11 @@ class Customer:
 
     def add_coins_to_wallet(self, coins_list):
         """Method responsible for adding coins from a list into wallet's money list"""
-        for coin in coin_list:
-            self.wallet.money.append(coins_list)
+        for coin in coins_list:
+            self.wallet.money.append(coin)
 
     def add_can_to_backpack(self, dispensed_can):
-        """Adds instance of a can into backpack's puchased_cans list. No errors"""
+        """Adds instance of a can into backpack's purchased_cans list. No errors"""
         self.backpack.purchased_cans.append(dispensed_can)
 
     def check_coins_in_wallet(self):
