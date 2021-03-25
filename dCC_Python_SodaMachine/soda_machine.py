@@ -1,3 +1,4 @@
+from dCC_Python_SodaMachine import coins, cans, user_interface
 
 
 class SodaMachine:
