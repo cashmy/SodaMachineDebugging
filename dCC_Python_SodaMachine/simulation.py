@@ -5,7 +5,8 @@ from dCC_Python_SodaMachine.soda_machine import SodaMachine
 
 class Simulation:
     def __init__(self):
-        pass
+        self.run_simulation()
+
 
     def run_simulation(self):
         """The central method called in main.py."""
