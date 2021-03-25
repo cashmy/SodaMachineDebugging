@@ -148,7 +148,7 @@ def validate_coin_selection(selection):
         2: (True, "Dime"),
         3: (True, "Nickel"),
         4: (True, "Penny"),
-        5: (False, "Done")
+        5: (True, "Done")
     }
     return switcher.get(selection, (False, None))
 

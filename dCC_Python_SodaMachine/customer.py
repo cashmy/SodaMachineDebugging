@@ -17,7 +17,7 @@ class Customer:
             user_interface.display_can_cost(selected_soda)
             user_interface.display_payment_value(customer_payment)
             coin_name = user_interface.coin_selection()
-            if coin_name == "done":
+            if coin_name == "Done":
                 break
             payment_coin = self.get_wallet_coin(coin_name)
             if payment_coin is not None:
