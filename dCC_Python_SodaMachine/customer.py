@@ -54,7 +54,7 @@ class Customer:
             elif coin.name == "dime":
                 coins_quantity[1] += 1
             elif coin.name == "Nickel":
-                coins_quantity[0] += 1
+                coins_quantity[2] += 1
             elif coin.name == "Penny":
                 coins_quantity[3] -= 1
         total_value = round(total_value, -2)
