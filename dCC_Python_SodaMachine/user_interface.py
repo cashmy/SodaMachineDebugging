@@ -74,7 +74,7 @@ def soda_selection(inventory):
         print("Please choose from the following options:")
         i = 1
         for can in soda_options:
-            print("\n\tEnter -{i}- for {can} : ${can.price}")
+            print(f"\n\tEnter -{i}- for {can.name} : ${can.price}")
             i += 1
         user_selection = try_parse_int(input("Selection:"))
         validated_user_selection = validate_coin_choice(user_selection, soda_options)
