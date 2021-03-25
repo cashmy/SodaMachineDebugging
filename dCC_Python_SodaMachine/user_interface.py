@@ -18,10 +18,10 @@ def simulation_main_menu():
 def validate_main_menu(user_input):
     """Validation function that checks if 'user_input' argument is an int 1-4. No errors."""
     switcher = {
+        0: (True, 0),
         1: (True, 1),
         2: (True, 2),
         3: (True, 3),
-        4: (True, 4),
     }
     return switcher.get(user_input, (False, None))
 
