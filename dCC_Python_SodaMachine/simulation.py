@@ -1,3 +1,6 @@
+from dCC_Python_SodaMachine import user_interface
+from dCC_Python_SodaMachine.customer import Customer
+from dCC_Python_SodaMachine.soda_machine import SodaMachine
 
 
 class Simulation:
