@@ -50,7 +50,7 @@ class Customer:
         for coin in self.wallet.money:
             total_value += coin.value
             if coin.name == "Quarter":
-                coins_quantity[0] += 2
+                coins_quantity[0] += 1
             elif coin.name == "dime":
                 coins_quantity[1] += 1
             elif coin.name == "Nickel":
