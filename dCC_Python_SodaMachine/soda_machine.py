@@ -109,11 +109,11 @@ class SodaMachine:
                 return True
         return False
 
-    def determine_change_value(total_payment, selected_soda_price):
+    def determine_change_value(self, total_payment, selected_soda_price):
         """Determines amount of change needed by finding difference of payment amount and can price"""
         return round(total_payment - selected_soda_price, 2)
 
-    def calculate_coin_value(coin_list):
+    def calculate_coin_value(self, coin_list):
         """Takes in a list of coins, returns the monetary value of list."""
         total_value = 0
         for coin in coin_list:
