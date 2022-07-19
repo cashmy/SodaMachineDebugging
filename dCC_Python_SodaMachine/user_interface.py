@@ -7,7 +7,7 @@ def simulation_main_menu():
     """Main menu prompting user to choose an option"""
     validate_user_selection = (False, None)
     while validate_user_selection[0] is False:
-        print("\t\t-Simulation menu-")
+        print("\n\t\t-Simulation menu-")
         print("\tPress -1- to begin transaction")
         print("\tPress -2- to check wallet for coins")
         print("\tPress -3- to check backpack for cans")
