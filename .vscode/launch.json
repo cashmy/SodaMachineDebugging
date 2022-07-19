@@ -16,7 +16,7 @@
             "name": "Python: Main",
             "type": "python",
             "request": "launch",
-            "program": "main.py",
+            "program": "dcc_Python_SodaMachine/main.py",
             "console": "integratedTerminal",
             "justMyCode": true
         }
