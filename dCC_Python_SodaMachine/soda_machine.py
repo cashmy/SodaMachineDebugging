@@ -1,4 +1,4 @@
-from dCC_Python_SodaMachine import coins, cans, user_interface
+import coins, cans, user_interface
 
 
 class SodaMachine:
@@ -109,12 +109,10 @@ class SodaMachine:
                 return True
         return False
 
-    @staticmethod
     def determine_change_value(total_payment, selected_soda_price):
         """Determines amount of change needed by finding difference of payment amount and can price"""
         return round(total_payment - selected_soda_price, 2)
 
-    @staticmethod
     def calculate_coin_value(coin_list):
         """Takes in a list of coins, returns the monetary value of list."""
         total_value = 0

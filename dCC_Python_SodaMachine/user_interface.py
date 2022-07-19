@@ -1,5 +1,7 @@
 import os
-
+# This file is meant to be imported as a module, not a class. 
+# This is similar to how the random module is imported.
+# Do not create a User Interface class in this file. 
 
 def simulation_main_menu():
     """Main menu prompting user to choose an option"""

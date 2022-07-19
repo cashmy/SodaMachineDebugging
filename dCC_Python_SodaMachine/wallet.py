@@ -1,4 +1,4 @@
-from dCC_Python_SodaMachine import coins
+import coins
 
 
 class Wallet:

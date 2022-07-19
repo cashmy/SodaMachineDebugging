@@ -1,6 +1,6 @@
-from dCC_Python_SodaMachine import user_interface
-from dCC_Python_SodaMachine.backpack import Backpack
-from dCC_Python_SodaMachine.wallet import Wallet
+import user_interface
+from backpack import Backpack
+from wallet import Wallet
 
 
 class Customer:
